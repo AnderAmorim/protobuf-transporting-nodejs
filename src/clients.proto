@@ -1,0 +1,14 @@
+syntax = "proto3";
+package listClientsPackage;
+
+message ClientProprieties {
+  string name = 1;
+  string email = 2;
+  string type = 3;
+  float cash = 4;
+}
+
+
+message ListClients{
+  repeated ClientProprieties clients = 1;
+}
